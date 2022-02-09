@@ -1,0 +1,24 @@
+{
+  "name": "campaya",
+  "version": "0.0.1",
+  "description": "Campaya PWA, build with Typescript and Web Components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinrossil/campaya.git"
+  },
+  "keywords": [
+    "Campaya",
+    "PWA",
+    "SPA"
+  ],
+  "author": "Martin Rossil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinrossil/campaya/issues"
+  },
+  "homepage": "https://github.com/martinrossil/campaya#readme"
+}
