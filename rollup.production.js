@@ -107,6 +107,7 @@ function template({ files }) {
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
     <meta name="Description" content="Sommerhusudlejning | Lej sommerhus fra alle bureauer her">
     <meta name="theme-color" content="#036">
+    <meta name="robots" content="noindex">
     <link rel="icon" href="icon32x32.ico">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon180x180.png">
