@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "rollup -c rollup.development.js --watch",
-    "lint": "eslint src/**/* functions/**/*",
+    "lint": "eslint src/**/*",
     "build": "rollup -c rollup.production.js"
   },
   "repository": {
@@ -47,6 +47,6 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "enta": "^0.8.4"
+    "enta": "^0.8.5"
   }
 }
