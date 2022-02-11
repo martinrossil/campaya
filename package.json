@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "rollup -c rollup.development.js --watch",
     "lint": "eslint src/**/* functions/**/*",
-    "build": "lint && rollup -c rollup.production.js"
+    "build": "rollup -c rollup.production.js"
   },
   "repository": {
     "type": "git",
