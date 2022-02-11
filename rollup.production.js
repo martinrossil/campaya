@@ -107,7 +107,6 @@ function template({ files }) {
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
     <meta name="Description" content="Sommerhusudlejning | Lej sommerhus fra alle bureauer her">
     <meta name="theme-color" content="#036">
-    <meta name="robots" content="noindex">
     <link rel="preload" href="Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
