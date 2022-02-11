@@ -1,7 +1,48 @@
 import { ArrayCollection, IArrayCollection } from 'enta';
 import DestinationLink from '../vo/DestinationLink';
+import Property from '../vo/Property';
 
 export default class Model {
+    private static _properties: IArrayCollection<Property>;
+    public static get properties(): IArrayCollection<Property> {
+        if (!this._properties) {
+            const properties: Array<Property> = [
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1),
+                new Property('', '', 6, 3, 1)
+            ];
+            this._properties = new ArrayCollection(properties);
+        }
+        return this._properties;
+    }
+
     private static _destinations: IArrayCollection<DestinationLink>;
     public static get destinations(): IArrayCollection<DestinationLink> {
         if (!this._destinations) {
