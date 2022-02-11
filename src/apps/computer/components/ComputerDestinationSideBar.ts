@@ -11,9 +11,9 @@ export default class ComputerDetinationsSideBar extends DataContainer<Destinatio
         this.name = 'ComputerDetinationsSideBar';
         this.width = 272;
         this.percentHeight = 100;
-        this.top = 72;
-        this.paddingTop = 16;
+        this.paddingTop = 12;
         this.paddingX = 8;
+        this.zIndex = 1;
         this.backgroundColor = Colors.WHITE;
         this.addFilter(Shadows.BOX_SHADOW_RIGHT_1);
         this.addFilter(Shadows.BOX_SHADOW_RIGHT_2);
