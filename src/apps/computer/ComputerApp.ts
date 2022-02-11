@@ -1,4 +1,4 @@
-import { DisplayContainer } from 'enta';
+import { DisplayContainer, VerticalLayout } from 'enta';
 import ComputerAppBar from './components/ComputerAppBar';
 import ComputerHomePage from './pages/ComputerHomePage';
 
@@ -7,6 +7,7 @@ export default class ComputerApp extends DisplayContainer {
         super();
         this.name = 'ComputerApp';
         this.percentWidth = this.percentHeight = 100;
+        this.layout = new VerticalLayout();
         this.addElements([new ComputerAppBar(), new ComputerHomePage()]);
     }
 }
