@@ -1,0 +1,22 @@
+/ce.js
+  Cache-Control: public, max-age=604800
+/fetch.js
+  Cache-Control: public, max-age=604800
+/*.svg
+  Cache-Control: public, max-age=604800
+/*.ico
+  Cache-Control: public, max-age=604800
+/*.png
+  Cache-Control: public, max-age=604800
+/manifest.webmanifest
+  Cache-Control: public, max-age=604800
+/robots.txt
+  Cache-Control: public, max-age=604800
+https://campaya.pages.dev/
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-protection: 1; mode=block
+  Referrer-Policy: no-referrer
+  Permissions-Policy: document-domain=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Content-Security-Policy: connect-src 'self'; default-src 'self'; font-src 'self'; img-src 'self'; manifest-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests;
