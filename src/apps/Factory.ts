@@ -1,6 +1,6 @@
-import ComputerApp from './ComputerApp';
-import MobileApp from './MobileApp';
-import TabletApp from './TabletApp';
+import ComputerApp from './computer/ComputerApp';
+import MobileApp from './mobile/MobileApp';
+import TabletApp from './tablet/TabletApp';
 
 export default class Factory {
     private static _mobileApp: MobileApp;
