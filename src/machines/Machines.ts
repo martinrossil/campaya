@@ -4,6 +4,7 @@ import ResponsiveMachine from './ResponsiveMachine';
 
 export default class Machines {
     public constructor(host: CampayaApp) {
+        console.log(host);
         this.responsiveMachine = new ResponsiveMachine(host);
         this.navigationMachine = new NavigationMachine(host);
     }
