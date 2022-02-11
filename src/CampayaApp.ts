@@ -1,6 +1,6 @@
 import { ApplicationElement } from 'enta';
-import Machines from './machines/Machines';
 import Colors from './theme/Colors';
+import Machines from './machines/Machines';
 
 export default class CampayaApp extends ApplicationElement {
     public constructor() {
