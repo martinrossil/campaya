@@ -7,10 +7,8 @@ export async function onRequest({env, request}): Promise<Response> {
         const response: Response = await fetch('https://graphql.fauna.com/graphql', {
             method: 'POST',
             headers: {
-                'content-type': 'application/json;charset=UTF-8',
-                'Access-Control-Allow-Origin': '*',
+                'Content-Type': 'application/json',
                 authorization: 'Basic ' + env.FAUNA_TOKEN,
-
             },
             body: `{
                 "query": "query properties {
@@ -33,7 +31,11 @@ export async function onRequest({env, request}): Promise<Response> {
                 }"
             }`
         });
-        return new Response(await response.json());
+        return new Response(await response.json(), {
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+        });
     } catch (error) {
         return new Response(JSON.stringify(error));
     }
