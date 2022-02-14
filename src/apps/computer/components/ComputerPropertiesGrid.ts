@@ -9,7 +9,7 @@ export default class ComputerPropertiesGrid extends DataContainer<Property> {
         this.name = 'ComputerPropertiesGrid';
         this.padding = 32;
         this.percentWidth = this.percentHeight = 100;
-        this.layout = new ColumnLayout(272, 6, 32);
+        this.layout = new ColumnLayout(320, 6, 32);
         this.DataRendererClass = PropertyRenderer;
         this.dataProvider = Model.properties;
     }
