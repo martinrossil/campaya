@@ -7,8 +7,10 @@ export async function onRequest({env, request}): Promise<Response> {
         const response: Response = await fetch('https://graphql.fauna.com/graphql', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                authorization: 'Basic ' + env.FAUNA_TOKEN
+                'content-type': 'application/json;charset=UTF-8',
+                'Access-Control-Allow-Origin': '*',
+                authorization: 'Basic ' + env.FAUNA_TOKEN,
+
             },
             body: `{
                 "query": "query properties {
