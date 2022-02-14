@@ -4,9 +4,11 @@ import { PropertiesRequest } from '../types/PropertiesRequest'
 export async function onRequest({env, request}): Promise<Response> {
     try {
         const propertiesRequest: PropertiesRequest = await request.json(); // , _cursor: "${propertiesRequest.cursor}"
+        const size = propertiesRequest.size;
+        const cursor: string | null = propertiesRequest.cursor;
         const query = JSON.stringify({
             query: `query properties {
-                properties(_size: ${propertiesRequest.size}) {
+                properties(_size: ${size}) {
                     data {
                         bedrooms
                         description
@@ -33,6 +35,19 @@ export async function onRequest({env, request}): Promise<Response> {
             body: query
             /* body: `{
                 "query": "query properties {
+                    properties(_size: ${size}) {
+                        data {
+                            id
+                            description
+                            fromPrice
+                            toPrice
+                            img
+                        }
+                    }
+                }"
+            }` */
+            /* body: `{
+                "query": "query properties {
                     properties(_size: ${propertiesRequest.size}, _cursor: ${propertiesRequest.cursor}) {
                         data {
                             bedrooms
@@ -52,8 +67,9 @@ export async function onRequest({env, request}): Promise<Response> {
                 }"
             }` */
         });
-        return new Response(await response.json(), {
+        return new Response(JSON.stringify(await response.json()), {
             headers: {
+                'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             }
         });
