@@ -24,6 +24,7 @@ module.exports = {
         'no-useless-call': 'off',
         'no-unused-vars': 'off',
         'space-before-function-paren': 'off',
-        'dot-notation': 'off'
+        'dot-notation': 'off',
+        'prefer-regex-literals': 'off'
     }
 }
