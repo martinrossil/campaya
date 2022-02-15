@@ -12,16 +12,17 @@ export async function onRequest({env, request}): Promise<Response> {
                 query: `query properties {
                     properties(_size: ${size}, _cursor: "${cursor}") {
                         data {
+                            bathrooms
                             bedrooms
                             description
-                            img
+                            destinations
                             fromPrice
                             id
-                            bathrooms
-                            type
+                            img
+                            picture
                             sleeps
                             toPrice
-                            destinations
+                            type
                         }
                         before
                         after
@@ -33,16 +34,17 @@ export async function onRequest({env, request}): Promise<Response> {
                 query: `query properties {
                     properties(_size: ${size}) {
                         data {
+                            bathrooms
                             bedrooms
                             description
-                            img
+                            destinations
                             fromPrice
                             id
-                            bathrooms
-                            type
+                            img
+                            picture
                             sleeps
                             toPrice
-                            destinations
+                            type
                         }
                         before
                         after
