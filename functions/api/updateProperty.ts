@@ -6,7 +6,7 @@ export async function onRequest({env, request}): Promise<Response> {
         const property: Property = await request.json();
         const query = JSON.stringify({
             query: `mutation {
-                updateProperty(id: "${property.id}", data: {
+                updateProperty(id: "${property._id}", data: {
                     bathrooms: ${property.bathrooms}
                     bedrooms: ${property.bedrooms}
                     description: "${property.description}"
@@ -25,6 +25,7 @@ export async function onRequest({env, request}): Promise<Response> {
                     description
                     destinations
                     fromPrice
+                    _id
                     id
                     img
                     sleeps
