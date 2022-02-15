@@ -4,6 +4,7 @@ export type Property = {
     description: string,
     destinations: Array<string>
     fromPrice: number,
+    _id: string,
     id: string,
     img: string,
     sleeps: number,
