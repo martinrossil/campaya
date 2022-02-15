@@ -1,6 +1,6 @@
 import { Property } from './Property';
 
-export type Properties = {
+export type PropertiesResponse = {
     data: {
         properties: {
             data: Array<Property>,
