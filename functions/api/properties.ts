@@ -17,6 +17,7 @@ export async function onRequest({env, request}): Promise<Response> {
                             description
                             destinations
                             fromPrice
+                            _id
                             id
                             img
                             picture
@@ -39,6 +40,7 @@ export async function onRequest({env, request}): Promise<Response> {
                             description
                             destinations
                             fromPrice
+                            _id
                             id
                             img
                             picture
