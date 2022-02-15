@@ -10,7 +10,8 @@
         "removeComments": true
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "functions/**/*"
     ],
     "exclude": [
         "node_modules"
