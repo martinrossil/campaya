@@ -48,7 +48,7 @@ export default class NavigationMachine extends Machine<CampayaApp> {
             e.preventDefault();
             if (location.pathname.toLowerCase() !== anchor.pathname) {
                 const path = anchor.pathname;
-                console.log('anchor pathname', path);
+                console.log('anchor pathname', path, decodeURIComponent(path));
                 history.pushState(null, '', path);
                 // this.updateDocumentTitle(index);
                 this.notify('URL_CHANGED');
