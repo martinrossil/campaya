@@ -14,7 +14,7 @@ export default class PropertyRenderer extends DataRenderer<Property> implements 
 
     protected updateInternalHeight(): void {
         super.updateInternalHeight();
-        this.internalHeight = this.actualWidth / 1.618; // golden ratio
+        this.internalHeight = this.actualWidth;
     }
 
     public initial(): void {
