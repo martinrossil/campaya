@@ -1,14 +1,12 @@
-import { UpdatePropertyRequest } from '../types/UpdatePropertyRequest';
+import { Property } from '../../src/types/Property';
 
 /* eslint-disable */
 export async function onRequest({env, request}): Promise<Response> {
     try {
-        const updatePropertyRequest: UpdatePropertyRequest = await request.json();
-        const id = updatePropertyRequest.id;
-        const property = updatePropertyRequest.propertyInput;
+        const property: Property = await request.json();
         const query = JSON.stringify({
             query: `mutation {
-                updateProperty(id: "${id}", data: {
+                updateProperty(id: "${property.id}", data: {
                     bathrooms: ${property.bathrooms}
                     bedrooms: ${property.bedrooms}
                     description: "${property.description}"
